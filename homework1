@@ -1,0 +1,56 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author pinki's jaan
+ */
+public class Building {
+
+    double squareFoot;
+    double TAX_RATE;
+    double marketPrice;
+    public Building(){
+        this.squareFoot = 0;
+        this.marketPrice = 0;
+    }
+
+    public double getSquareFoot() {
+        return squareFoot;
+    }
+
+    public void setSquareFoot(double squareFoot) {
+        this.squareFoot = squareFoot;
+    }
+
+    public double getTAX_RATE() {
+        return TAX_RATE;
+    }
+
+    public void setTAX_RATE(double TAX_RATE) {
+        this.TAX_RATE = TAX_RATE;
+    }
+
+    public double getMarketPrice() {
+        return marketPrice;
+    }
+
+    public void setMarketPrice(double marketPrice) {
+        this.marketPrice = marketPrice;
+    }
+  
+    public Building(double squareFoot, double TAX_RATE, double marketPrice) {
+        this.squareFoot = squareFoot;
+        this.TAX_RATE = TAX_RATE;
+        this.marketPrice = marketPrice;
+    }
+    public double getTax(){
+       
+        return (marketPrice - 10000) * TAX_RATE;
+    }
+    
+}
